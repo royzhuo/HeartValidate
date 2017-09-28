@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--读取mysql属性文件-->
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <array>
+                <value>classpath:db.properties</value>
+                <value>classpath:heartbeat.properties</value>
+            </array>
+        </property>
+    </bean>
+
+    <!--过滤掉spring mvc注解-->
+    <context:component-scan base-package="com"/>
+
+    <!--C3P0连接池-->
+    <bean class="com.mchange.v2.c3p0.ComboPooledDataSource" id="dataSource">
+        <property name="user" value="${mysql.user}"/>
+        <property name="password" value="${mysql.pwd}"/>
+        <property name="jdbcUrl" value="${mysql.url}"/>
+        <property name="driverClass" value="${mysql.driver}"/>
+    </bean>
+
+    <!--装配系统bean-->
+    <bean id="sysInfo" class="com.entity.SysInfo">
+        <property name="cc" value="${email.cc}"/>
+        <property name="sender" value="${email.sender}"/>
+        <property name="recipient" value="${email.recipient}"/>
+        <property name="dbName" value="${mysql.dbName}"/>
+        <property name="tableName" value="${mysql.tablename}"/>
+    </bean>
+
+
+    <!--导入定时检查配置文件-->
+    <import resource="classpath:spring-db-validate.xml" />
+
+    <!--导入邮件发送配置文件-->
+    <import resource="classpath:spring-mail.xml"/>
+
+
+
+</beans>
