@@ -19,7 +19,7 @@
     <dependencies>
 
         <!--配置junit-->
-        <!--        <dependency>
+<!--                <dependency>
                     <groupId>junit</groupId>
                     <artifactId>junit</artifactId>
                     <version>${junit.version}</version>
@@ -81,7 +81,7 @@
                     <artifactId>spring-orm</artifactId>
                     <version>${spring.version}</version>
                 </dependency>-->
-        <!--        <dependency>
+<!--                <dependency>
                     <groupId>org.springframework</groupId>
                     <artifactId>spring-test</artifactId>
                     <version>${spring.version}</version>
@@ -155,7 +155,7 @@
 
 
         <!--httpclient-->
-        <!--        <dependency>
+<!--                <dependency>
                     <groupId>org.apache.httpcomponents</groupId>
                     <artifactId>httpclient</artifactId>
                     <version>4.5.3</version>
