@@ -1,0 +1,5 @@
+2017-09-29 14:24:12,593 ERROR [com.service.ValidateDBService2] - Operation not allowed after ResultSet closed
+2017-09-29 14:28:13,887 ERROR [com.service.ValidateDBService2] - Operation not allowed after ResultSet closed
+2017-09-29 14:31:58,622 ERROR [com.service.ValidateDBService2] - Operation not allowed after ResultSet closed
+2017-09-29 14:37:55,069 ERROR [com.service.ValidateDBService2] - Operation not allowed after ResultSet closed
+2017-09-29 15:17:11,012 ERROR [com.service.ValidateDBService2] - dberror
