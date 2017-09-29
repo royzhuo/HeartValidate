@@ -1,5 +1,7 @@
-2017-09-29 14:24:12,593 ERROR [com.service.ValidateDBService2] - Operation not allowed after ResultSet closed
-2017-09-29 14:28:13,887 ERROR [com.service.ValidateDBService2] - Operation not allowed after ResultSet closed
-2017-09-29 14:31:58,622 ERROR [com.service.ValidateDBService2] - Operation not allowed after ResultSet closed
-2017-09-29 14:37:55,069 ERROR [com.service.ValidateDBService2] - Operation not allowed after ResultSet closed
-2017-09-29 15:17:11,012 ERROR [com.service.ValidateDBService2] - dberror
+2017-09-30 00:34:57,874 ERROR [com.service.ValidateDBService2] - 535 Error: ÇëÊ¹ÓÃÊÚÈ¨ÂëµÇÂ¼¡£ÏêÇéÇë¿´: http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+2017-09-30 00:35:30,445 ERROR [com.service.ValidateDBService2] - 535 Error: ÇëÊ¹ÓÃÊÚÈ¨ÂëµÇÂ¼¡£ÏêÇéÇë¿´: http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+2017-09-30 00:37:55,324 ERROR [com.service.ValidateDBService2] - 535 Error: ÇëÊ¹ÓÃÊÚÈ¨ÂëµÇÂ¼¡£ÏêÇéÇë¿´: http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+
+2017-09-30 00:53:00,217 ERROR [com.service.ValidateDBService2] - Can't send command to SMTP host
