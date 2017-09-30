@@ -1,9 +1,114 @@
-2017-09-30 00:34:55,327 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
-2017-09-30 00:34:55,741 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
-2017-09-30 00:34:56,134 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge0yv9q1lakv9jdcmcvj|4783ac8d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge0yv9q1lakv9jdcmcvj|4783ac8d, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/heartbeat?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 40, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
-2017-09-30 00:34:57,138 INFO [com.service.ValidateDBService2] - 数据表创建失败
-2017-09-30 00:34:57,874 ERROR [com.service.ValidateDBService2] - 535 Error: ÇëÊ¹ÓÃÊÚÈ¨ÂëµÇÂ¼¡£ÏêÇéÇë¿´: http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+2017-09-28 14:38:19,516 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7dc5e7b4: startup date [Thu Sep 28 14:38:19 GMT+08:00 2017]; root of context hierarchy
+2017-09-28 14:38:19,784 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring.xml]
+2017-09-28 14:38:21,693 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Overriding bean definition for bean 'sysInfo' with a different definition: replacing [Generic bean: class [com.entity.SysInfo]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\roy\kaifa\src\personal\heartValidate\target\classes\com\entity\SysInfo.class]] with [Generic bean: class [com.entity.SysInfo]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring.xml]]
+2017-09-28 14:38:21,694 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-db-validate.xml]
+2017-09-28 14:38:21,715 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mail.xml]
+2017-09-28 14:38:21,890 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [db.properties]
+2017-09-28 14:38:21,890 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [heartbeat.properties]
+2017-09-28 14:38:22,091 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-09-28 14:38:22,479 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-09-28 14:38:22,802 INFO [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2017-09-28 14:38:22,821 INFO [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-28 14:38:22,821 INFO [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.3.0 created.
+2017-09-28 14:38:22,822 INFO [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2017-09-28 14:38:22,823 INFO [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
+2017-09-28 14:38:22,823 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2017-09-28 14:38:22,823 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.3.0
+2017-09-28 14:38:22,825 INFO [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@119c745c
+2017-09-28 14:38:22,925 INFO [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2017-09-28 14:38:22,925 INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2017-09-28 14:38:22,925 INFO [org.quartz.core.QuartzScheduler] - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2017-09-28 14:38:50,071 INFO [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge2eq9q1j9tubb1u2v31j|151ef57f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge2eq9q1j9tubb1u2v31j|151ef57f, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/heartbeat?useUnicode=true&characterEncoding=utf8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2017-09-28 14:38:51,992 INFO [com.service.ValidateDBService] - 数据表创建失败
+2017-09-28 14:38:53,984 INFO [com.service.ValidateDBService] - 发送成功
+2017-09-30 09:46:15,292 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7dc5e7b4: startup date [Sat Sep 30 09:46:15 GMT+08:00 2017]; root of context hierarchy
+2017-09-30 09:46:15,512 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring.xml]
+2017-09-30 09:46:20,300 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Overriding bean definition for bean 'sysInfo' with a different definition: replacing [Generic bean: class [com.entity.SysInfo]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\roy\kaifa\src\personal\heartValidate\target\classes\com\entity\SysInfo.class]] with [Generic bean: class [com.entity.SysInfo]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring.xml]]
+2017-09-30 09:46:20,301 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-db-validate.xml]
+2017-09-30 09:46:20,344 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mail.xml]
+2017-09-30 09:46:20,588 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [db.properties]
+2017-09-30 09:46:20,588 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [heartbeat.properties]
+2017-09-30 09:46:20,849 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-09-30 09:46:21,551 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-09-30 09:46:21,935 INFO [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2017-09-30 09:46:21,974 INFO [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-30 09:46:21,974 INFO [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.3.0 created.
+2017-09-30 09:46:21,975 INFO [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2017-09-30 09:46:21,976 INFO [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-30 09:46:21,976 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2017-09-30 09:46:21,976 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.3.0
+2017-09-30 09:46:21,978 INFO [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@119c745c
+2017-09-30 09:46:22,105 INFO [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2017-09-30 09:46:22,105 INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2017-09-30 09:46:22,105 INFO [org.quartz.core.QuartzScheduler] - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2017-09-30 09:48:36,793 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7dc5e7b4: startup date [Sat Sep 30 09:48:36 GMT+08:00 2017]; root of context hierarchy
+2017-09-30 09:48:36,845 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring.xml]
+2017-09-30 09:48:38,774 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Overriding bean definition for bean 'sysInfo' with a different definition: replacing [Generic bean: class [com.entity.SysInfo]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\roy\kaifa\src\personal\heartValidate\target\classes\com\entity\SysInfo.class]] with [Generic bean: class [com.entity.SysInfo]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring.xml]]
+2017-09-30 09:48:38,775 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-db-validate.xml]
+2017-09-30 09:48:38,804 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mail.xml]
+2017-09-30 09:48:38,926 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [db.properties]
+2017-09-30 09:48:38,927 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [heartbeat.properties]
+2017-09-30 09:48:38,996 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-09-30 09:48:39,180 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-09-30 09:48:39,318 INFO [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2017-09-30 09:48:39,327 INFO [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-30 09:48:39,327 INFO [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.3.0 created.
+2017-09-30 09:48:39,328 INFO [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2017-09-30 09:48:39,328 INFO [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-30 09:48:39,329 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2017-09-30 09:48:39,329 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.3.0
+2017-09-30 09:48:39,329 INFO [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@119c745c
+2017-09-30 09:48:39,357 INFO [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2017-09-30 09:48:39,358 INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2017-09-30 09:48:39,358 INFO [org.quartz.core.QuartzScheduler] - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2017-09-30 09:50:20,035 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@45fe3ee3: startup date [Sat Sep 30 09:50:20 GMT+08:00 2017]; root of context hierarchy
+2017-09-30 09:50:20,076 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring.xml]
+2017-09-30 09:50:21,160 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Overriding bean definition for bean 'sysInfo' with a different definition: replacing [Generic bean: class [com.entity.SysInfo]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/D:/roy/kaifa/src/personal/heartValidate/target/heartValidate-1.0-SNAPSHOT-jar-with-dependencies.jar!/com/entity/SysInfo.class]] with [Generic bean: class [com.entity.SysInfo]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring.xml]]
+2017-09-30 09:50:21,160 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-db-validate.xml]
+2017-09-30 09:50:21,181 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-mail.xml]
+2017-09-30 09:50:21,289 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [db.properties]
+2017-09-30 09:50:21,289 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Loading properties file from class path resource [heartbeat.properties]
+2017-09-30 09:50:21,391 INFO [com.mchange.v2.log.MLog] - MLog clients using slf4j logging.
+2017-09-30 09:50:21,589 INFO [com.mchange.v2.c3p0.C3P0Registry] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2017-09-30 09:50:21,766 INFO [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2017-09-30 09:50:21,786 INFO [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-30 09:50:21,787 INFO [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.3.0 created.
+2017-09-30 09:50:21,787 INFO [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2017-09-30 09:50:21,787 INFO [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-30 09:50:21,788 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2017-09-30 09:50:21,788 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.3.0
+2017-09-30 09:50:21,788 INFO [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@4a37191a
+2017-09-30 09:50:21,815 INFO [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2017-09-30 09:50:21,815 INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2017-09-30 09:50:21,815 INFO [org.quartz.core.QuartzScheduler] - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
 2017-09-30 00:35:30,155 INFO [com.service.ValidateDBService2] - 数据表创建失败
 2017-09-30 00:35:30,445 ERROR [com.service.ValidateDBService2] - 535 Error: ÇëÊ¹ÓÃÊÚÈ¨ÂëµÇÂ¼¡£ÏêÇéÇë¿´: http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
 
