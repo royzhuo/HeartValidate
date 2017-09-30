@@ -23,6 +23,10 @@
         <property name="password" value="${mysql.pwd}"/>
         <property name="jdbcUrl" value="${mysql.url}"/>
         <property name="driverClass" value="${mysql.driver}"/>
+        <!--如果设为true那么在取得连接的同时将校验连接的有效性。Default: false -->
+        <property name="testConnectionOnCheckin" value="true"/>
+        <!--每5小时检查所有连接池中的空闲连接。防止mysql wait_timeout（默认的为8小时）-->
+        <property name="idleConnectionTestPeriod" value="18000"/>
     </bean>
 
     <!--装配系统bean-->
